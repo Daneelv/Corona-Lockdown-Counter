@@ -64,7 +64,7 @@ kbd {
   padding-bottom: 5%;
   color: white;
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 8vh;
 
 }
 
@@ -83,4 +83,21 @@ kbd {
   display: none;
   margin-top: 2rem;
   font-size: 6rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+  body{
+    /* background: red; */
+  }
+
+.heading, #counter, .its-time { 
+  font-size: 5rem !important;
+}
+
+kbd {
+  font-size: 2rem !important;
+
+}
+ 
 }
