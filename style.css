@@ -1,0 +1,86 @@
+html {
+  font-size: 10px;
+  background: url(https://img-www.tf-cdn.com/movie/2/the-first-purge-2018.jpeg?_v=20180702185516&fit=crop&crop=faces%20entropy&w=1200&h=630)  no-repeat fixed center center;
+  background-size: cover;
+}
+
+body,html,kbd {
+  margin: 0;
+  padding: 0;
+  font-family: 'Notable', sans-serif;
+  font-family: 'Ravi Prakash', cursive;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  /* border: .4rem solid black; */
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color:red;
+  /* background: rgba(0,0,0,0.4); */
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: red;
+  box-shadow: 0 0 1rem red;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  display: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+
+.heading {
+  text-shadow: 0 0 .5rem black;
+  font-size: 7rem;
+}
+
+#counter {
+  text-shadow: 0 0 .5rem black;
+  font-size: 10rem;
+  padding-bottom: 5%;
+  color: white;
+  text-align: center;
+  margin-top: 20vh;
+
+}
+
+.animationBlink {
+  animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+  0%{     color: red; text-shadow: 0 0 .5rem black; }
+  49%{    color: red; text-shadow: 0 0 .5rem black; }
+  60%{    color: transparent;text-shadow: none}
+  99%{    color: transparent; text-shadow: none }
+  100%{   color: red; text-shadow: 0 0 .5rem black;}
+}
+
+.its-time {
+  display: none;
+  margin-top: 2rem;
+  font-size: 6rem;
+}
